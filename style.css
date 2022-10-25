@@ -45,7 +45,7 @@ button {
   background-color: #1e1e1e;
   color: white;
   border: none;
-  padding: 15px 25px;
+  padding: 10px 8px;
   border-radius: 3px;
 }
 
@@ -59,7 +59,7 @@ button {
 
 .bonne-aventure {
   display: flex;
-  width: 40%;
+  width: 80%;
   gap: 10px;
   align-items: center;
 }
@@ -72,6 +72,8 @@ input {
   border-radius: 5px;
   border: 1px solid #1e1e1e;
   color: white;
+  height:20%;
+  font-size: 0.8em;
   font-size: large;
   text-align: center;
   font-weight: bold;
@@ -94,7 +96,7 @@ input[type="number"] {
   display: flex;
   align-items: center;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 0.9em;
 }
 .separator::before,
 .separator::after {
@@ -113,7 +115,6 @@ input[type="number"] {
 .first-row {
   display: flex;
   justify-content: space-between;
-  gap: 60px;
 }
 
 .flex-between {
@@ -128,3 +129,11 @@ input[type="number"] {
 .p-2 {
   padding: 20px;
 }
+
+.pl-0 {
+    padding-left: 0;
+  }
+  
+.pr-0 {
+    padding-right: 0;
+  }
