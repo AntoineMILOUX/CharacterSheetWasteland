@@ -64,7 +64,7 @@ button {
   align-items: center;
 }
 
-input {
+.rounded-input {
   width: 50%;
   margin: auto;
   padding: 10px;
@@ -72,11 +72,16 @@ input {
   border-radius: 5px;
   border: 1px solid #1e1e1e;
   color: white;
-  height:20%;
+  height: 20%;
   font-size: 0.8em;
   font-size: large;
   text-align: center;
   font-weight: bold;
+}
+
+.circle-input {
+  padding: 10px;
+  border-radius: 100%;
 }
 
 /* ---------- HIDE ARROW NUMBER INPUT ----------- */
@@ -112,9 +117,47 @@ input[type="number"] {
   margin-left: 0.75em;
 }
 
-.first-row {
+/* -------- SEPARATOR FULL WIDTH ------- */
+.second-row .separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2em;
+}
+.second-row .separator::before,
+.second-row .separator::after {
+  content: "";
+  display: inline-block;
+  width: 600px;
+  border-bottom: 2px solid #000;
+}
+.second-row .separator::before {
+  margin-right: 0.75em;
+}
+.second-row .separator::after {
+  margin-left: 0.75em;
+}
+
+.row {
   display: flex;
   justify-content: space-between;
+  gap: 60px;
+  margin-top: 20px;
+}
+
+.second-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 75px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.attributs {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-evenly;
 }
 
 .flex-between {
@@ -131,9 +174,9 @@ input[type="number"] {
 }
 
 .pl-0 {
-    padding-left: 0;
-  }
-  
+  padding-left: 0;
+}
+
 .pr-0 {
-    padding-right: 0;
-  }
+  padding-right: 0;
+}
